@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Pig head shape -->
+    <circle cx="16" cy="16" r="15" fill="#FFC0CB"/>
+    <!-- Ears -->
+    <circle cx="7" cy="8" r="4" fill="#FFB6C1"/>
+    <circle cx="25" cy="8" r="4" fill="#FFB6C1"/>
+    <!-- Snout -->
+    <circle cx="16" cy="18" r="6" fill="#FFB6C1"/>
+    <!-- Nostrils -->
+    <circle cx="14" cy="18" r="1.5" fill="#FF69B4"/>
+    <circle cx="18" cy="18" r="1.5" fill="#FF69B4"/>
+    <!-- Eyes -->
+    <circle cx="11" cy="13" r="2" fill="#000000"/>
+    <circle cx="21" cy="13" r="2" fill="#000000"/>
+</svg> 
