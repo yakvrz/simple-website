@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -24,6 +26,8 @@ jobs:
           publish_dir: .
           publish_branch: gh-pages
           force_orphan: true
+          exclude_assets: '.github,.gitignore,.git,.venv'
+          enable_jekyll: false
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: 'Deploy to GitHub Pages' 
