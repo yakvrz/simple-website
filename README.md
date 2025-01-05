@@ -5,8 +5,9 @@ A modern, responsive portfolio website for the legendary Looney Tunes character,
 ## 🌟 Features
 
 - Responsive design that works on all devices and browsers
-- Clean, modern UI with smooth animations
+- Clean, modern UI with retro animations
 - Contact form integration using Formspree
+- Real-time visitor tracking
 - Accessibility-focused development
 - Performance optimized
 - HTTPS enabled
@@ -15,10 +16,11 @@ A modern, responsive portfolio website for the legendary Looney Tunes character,
 ## 🛠️ Technologies Used
 
 - HTML5
-- CSS3 (with CSS Variables and Flexbox/Grid)
+- CSS3 (with CSS Variables and Table-based layout)
 - Vanilla JavaScript
+- Firebase Realtime Database
 - Formspree for form handling
-- Google Fonts
+- GitHub Pages for hosting
 
 ## 🚀 Setup and Deployment
 
@@ -28,26 +30,48 @@ A modern, responsive portfolio website for the legendary Looney Tunes character,
    cd porky-portfolio
    ```
 
-2. Update the Formspree endpoint:
+2. Firebase Setup:
+   - Create a new Firebase project at [Firebase Console](https://console.firebase.google.com)
+   - Enable Realtime Database
+   - Copy your Firebase config to `firebase-config.js`
+   - Set database rules to allow read/write
+
+3. Formspree Setup:
    - Sign up at [Formspree](https://formspree.io)
-   - Create a new form and get your form ID
+   - Create a new form
    - Replace `your-form-id` in `index.html` with your actual form ID
 
-3. Deploy to GitHub Pages:
-   - Go to your repository settings
-   - Navigate to the "Pages" section
-   - Select your main branch as the source
-   - Save the changes
+4. GitHub Setup:
+   - Create a new repository
+   - Push your code:
+     ```bash
+     git remote add origin https://github.com/your-username/porky-portfolio.git
+     git branch -M main
+     git push -u origin main
+     ```
 
-4. Set up your custom domain (optional):
+5. GitHub Pages Setup:
+   - Go to repository Settings > Pages
+   - Set source branch to `gh-pages`
+   - Enable HTTPS
+
+6. Custom Domain Setup:
    - Purchase a domain from your preferred registrar
-   - Add your custom domain in the GitHub Pages settings
-   - Configure DNS settings according to GitHub's documentation
-   - Wait for DNS propagation (may take up to 24 hours)
+   - Add your domain in GitHub Pages settings
+   - Configure DNS settings:
+     ```
+     Type    Name               Value
+     A       @                  185.199.108.153
+     A       @                  185.199.109.153
+     A       @                  185.199.110.153
+     A       @                  185.199.111.153
+     CNAME   www               your-username.github.io
+     ```
+   - Update CNAME in deploy.yml
 
-## 📱 Responsive Design
+## 📱 Testing
 
-The website is fully responsive and tested on:
+The website has been tested on:
 - Mobile devices (iOS and Android)
 - Tablets
 - Desktops
@@ -56,10 +80,10 @@ The website is fully responsive and tested on:
 ## ♿ Accessibility Features
 
 - Semantic HTML structure
-- ARIA labels where necessary
+- ARIA labels
 - Keyboard navigation support
 - High contrast ratios
-- Alt text for all images
+- Alt text for images
 - Responsive font sizes
 
 ## 🔍 SEO Optimization
@@ -71,14 +95,12 @@ The website is fully responsive and tested on:
 - Fast loading times
 - Mobile-friendly design
 
-## 📊 Performance
+## 📊 Analytics
 
-The website has been optimized for performance:
-- Compressed images
-- Minimal JavaScript
-- Efficient CSS
-- Lazy loading of images
-- Browser caching
+The site includes:
+- Real-time visitor counter
+- Online users tracking
+- Firebase analytics integration
 
 ## 🤝 Contributing
 

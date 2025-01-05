@@ -3,112 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website of Porky Pig - Animation Star and Voice Actor">
-    <meta name="keywords" content="Porky Pig, Animation, Voice Acting, Warner Bros, Looney Tunes">
-    <title>Porky Pig - Th-th-that's All Folks!</title>
+    <meta name="description" content="Official Website of Porky Pig - Warner Bros. Animation Star">
+    <meta name="keywords" content="porky pig, warner bros, looney tunes, animation, voice acting, cartoons">
+    <title>Porky Pig | Official Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
+    <!-- Optimized for Netscape 7.0 and Internet Explorer 6.0 -->
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script src="firebase-config.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">P.P.</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <div class="logo">★ Porky Pig Official Website ★</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="guestbook.html">Guest Book</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section id="hero">
-            <div class="container">
-                <h1>Hi! I'm P-p-porky Pig</h1>
-                <p class="subtitle">Voice Actor & Animation Star since 1935</p>
-            </div>
-        </section>
-
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>As one of Warner Bros.' most beloved characters, I've been entertaining audiences for over 85 years. Known for my distinctive stutter and heartwarming personality, I've starred in countless animated features and shorts.</p>
-                <div class="skills">
-                    <div class="skill">Voice Acting</div>
-                    <div class="skill">Comedy</div>
-                    <div class="skill">Public Speaking</div>
-                    <div class="skill">Character Performance</div>
+        <main>
+            <section id="hero">
+                <img src="construction.gif" alt="Site Updates in Progress" class="under-construction">
+                <h1>Welcome to My Official Website</h1>
+                <p class="subtitle">Warner Bros. Animation Star Since 1935</p>
+                <div class="news-ticker">
+                    <span>★ New cartoons coming soon! ★ Check out my latest voice work ★ Sign the guestbook! ★ Updates every week ★</span>
                 </div>
-            </div>
-        </section>
+                <div class="browser-badge">
+                    Site optimized for 800x600 resolution • Best viewed in Netscape
+                </div>
+            </section>
 
-        <section id="portfolio">
-            <div class="container">
-                <h2>My Work</h2>
+            <section id="about">
+                <h2>About Me</h2>
+                <marquee scrollamount="2" behavior="alternate">Welcome to my official web presence!</marquee>
+                <p>As a Warner Bros. entertainment professional, I have been delighting audiences worldwide since 1935 with my distinctive personality and memorable performances.</p>
+                <div class="skills">
+                    <div class="skill" title="Click to learn more!">Voice Acting</div>
+                    <div class="skill" title="Click to learn more!">Character Animation</div>
+                    <div class="skill" title="Click to learn more!">Public Speaking</div>
+                    <div class="skill" title="Click to learn more!">Entertainment</div>
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <h2>Featured Work</h2>
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
-                        <img src="#" alt="Portfolio item 1" loading="lazy">
-                        <h3>Portfolio Item 1</h3>
-                        <p>Description of the first portfolio item.</p>
+                        <img src="#" alt="Animation Showcase">
+                        <h3>Animation Showcase</h3>
+                        <p>View selected works from my animation career</p>
+                        <blink style="color: #FF6666; font-size: 11px;">New!</blink>
                     </div>
                     <div class="portfolio-item">
-                        <img src="#" alt="Portfolio item 2" loading="lazy">
-                        <h3>Portfolio Item 2</h3>
-                        <p>Description of the second portfolio item.</p>
+                        <img src="#" alt="Voice Acting Portfolio">
+                        <h3>Voice Acting</h3>
+                        <p>Listen to voice performance samples</p>
                     </div>
                     <div class="portfolio-item">
-                        <img src="#" alt="Portfolio item 3" loading="lazy">
-                        <h3>Portfolio Item 3</h3>
-                        <p>Description of the third portfolio item.</p>
+                        <img src="#" alt="Media Gallery">
+                        <h3>Media Gallery</h3>
+                        <p>Official images and press materials</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="contact">
-            <div class="container">
-                <h2>Get in Touch</h2>
+            <section id="contact">
+                <h2>Contact Information</h2>
                 <form id="contact-form" action="https://formspree.io/f/myyqpzny" method="POST">
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email:</label>
+                        <label for="email">Email Address:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
-                    <button type="submit">Send Message</button>
+                    <button type="submit">→ Send Message ←</button>
                 </form>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer>
-        <div class="container">
+        <footer>
             <div class="social-links">
-                <a href="https://www.warnerbros.com/brands/looney-tunes" target="_blank" rel="noopener noreferrer">Warner Bros.</a>
-                <a href="https://www.imdb.com/title/tt0033023/" target="_blank" rel="noopener noreferrer">IMDb</a>
-                <a href="https://en.wikipedia.org/wiki/Porky_Pig" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+                <a href="https://www.warnerbros.com/brands/looney-tunes" target="_blank">Warner Bros.</a>
+                <a href="https://www.imdb.com/title/tt0033023/" target="_blank">IMDb Profile</a>
+                <a href="https://en.wikipedia.org/wiki/Porky_Pig" target="_blank">Wikipedia</a>
             </div>
-            <p>&copy; 2024 Porky Pig. Th-th-that's all folks!</p>
-        </div>
-    </footer>
+            <div class="hit-counter" id="visitor-count">
+                Loading visitors...
+            </div>
+            <p>Copyright © 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+            <p><small>Last updated: January 5, 2024 • <span id="online-visitors">Loading...</span></small></p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
+    <script src="visitors.js"></script>
 </body>
 </html> 
