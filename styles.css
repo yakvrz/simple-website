@@ -137,6 +137,34 @@ h2 {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    background: var(--light-color);
+    /* Fallback for missing images */
+    min-height: 200px;
+    position: relative;
+}
+
+.portfolio-item img:not([src]), 
+.portfolio-item img[src=""], 
+.portfolio-item img[src="#"] {
+    visibility: hidden;
+}
+
+.portfolio-item img:not([src])::before, 
+.portfolio-item img[src=""]::before, 
+.portfolio-item img[src="#"]::before {
+    content: "Portfolio Image";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color);
+    font-size: 1.2rem;
+    visibility: visible;
 }
 
 .portfolio-item h3 {
