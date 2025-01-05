@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Porky Pig - Animation Star and Voice Actor">
+    <meta name="keywords" content="Porky Pig, Animation, Voice Acting, Warner Bros, Looney Tunes">
+    <title>Porky Pig - Th-th-that's All Folks!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">P.P.</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1>Hi! I'm P-p-porky Pig</h1>
+                <p class="subtitle">Voice Actor & Animation Star since 1935</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>As one of Warner Bros.' most beloved characters, I've been entertaining audiences for over 85 years. Known for my distinctive stutter and heartwarming personality, I've starred in countless animated features and shorts.</p>
+                <div class="skills">
+                    <div class="skill">Voice Acting</div>
+                    <div class="skill">Comedy</div>
+                    <div class="skill">Public Speaking</div>
+                    <div class="skill">Character Performance</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>My Work</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="images/porky1.jpg" alt="Scene from a classic Porky Pig cartoon" loading="lazy">
+                        <h3>Porky in Wackyland (1938)</h3>
+                        <p>A surreal adventure in search of the last Do-Do bird.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/porky2.jpg" alt="Porky Pig's ending sequence" loading="lazy">
+                        <h3>That's All Folks!</h3>
+                        <p>My iconic closing sequence for Warner Bros.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/porky3.jpg" alt="Porky Pig in a recent appearance" loading="lazy">
+                        <h3>Modern Appearances</h3>
+                        <p>Still active in recent Warner Bros. productions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/porky-pig" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://twitter.com/porky-pig" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
+            <p>&copy; 2024 Porky Pig. Th-th-that's all folks!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
